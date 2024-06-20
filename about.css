@@ -1,0 +1,464 @@
+body{
+    background-color: black;
+}
+.about{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #00172d, #002a4d);
+    position: relative;
+    overflow: hidden;
+}
+
+.about::before, .about::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 10px, transparent 10px, transparent 20px);
+    animation: animate 10s linear infinite;
+}
+
+.about::after {
+    animation-direction: reverse;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100%, 100%);
+    }
+}
+.heading{
+    font-size: 40pt;
+}
+.paragraph{
+    font-size: large;
+}
+.cont2{
+    position: relative;
+    background-color: black;
+}
+
+.line {
+    position: absolute;
+    width: 2px;
+    height: 200vh;
+    background: blue;
+    top: 100px;
+    left: 50%;
+}
+
+.para{
+    margin-top: 90px;
+    padding-left: 0px;
+    color: white;
+}
+
+.image{
+    margin-top: 90px;
+}
+.image1{
+    width: 100%;
+    height: 350px;
+}
+
+.mission{
+    margin-top: 100px;
+}
+
+
+.marquee-container {
+    margin-top: 100px;
+    /* overflow: hidden; */
+    position: relative;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: 90px;
+    display: flex;
+    align-items: center; 
+}
+.marquee-static {
+    flex-shrink: 0; /*Prevent the static text from shrinking*/
+    margin-right: 20px; /* Space between static text and marquee */
+    font-size: larger;
+}
+
+
+.marquee-wrapper {
+    overflow: hidden;
+    position: relative;
+    flex-grow: 1;
+}
+
+.marquee {
+    display: flex;
+    width: 100%;
+    /* margin-top: 20px; */
+    padding-left: 50px;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee div {
+    display: flex;
+    white-space: nowrap;
+}
+
+.marquee span {
+    display: inline-block;
+    margin-right: 50px; /* Adjust the space between the names as needed */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.partner {
+    /* font-family: 'Arial', sans-serif; */
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    color: blue;
+    font-size: xx-large;
+    font-style: oblique;
+    
+}
+
+.part1 {
+    /* font-family: 'Arial', sans-serif; */
+    font-weight: bold;
+    color: red;
+    font-size: larger;
+    font-family: "Playwrite AU VIC", cursive;
+    font-style: italic;
+}
+
+.part2 {
+    font-family: "Dancing Script", cursive;
+    color: rgb(180, 43, 89);
+    font-size: x-large;
+    font-style: italic;
+}
+
+.part3 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    /* text-decoration: underline; */
+    color: green;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.part4 {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    /* text-decoration: underline; */
+    color: orange;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.contacting{
+    /* border: 1px solid white; */
+    margin-top: 80px;
+    padding-left: 60px ;
+    width: 800px;
+}
+.contact{
+    border: 2px solid #356b97;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-bottom: 40px;
+    background-color: groove;
+}
+.lights{
+    position: absolute;
+    left: 500px;
+    bottom: 600px;
+}
+.phones{
+    margin-top: 40px;
+}
+
+.contactUs{
+    padding: 10px;
+    background-color: #356b97;
+    color: white;
+    border: none;
+}
+.callUs{
+    padding: 10px;
+    background-color: #356b97;
+    color: white;
+    border: none;
+}
+.background{
+    width: 350px;
+    padding-left: 0px;
+    height: 500px;
+}
+.code{
+    margin-top: 110px;
+    padding-left: 60px;
+}
+.codeicon{
+    padding-left: 0px;
+}
+.codepro{
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    bottom: 400px;
+    left: 80px;
+    /* padding-left: 50px; */
+}
+.digital{
+    position: absolute;
+    color: white;
+    bottom: 350px;
+    left: 80px;  
+    letter-spacing: 5px;
+}
+.linkedin{
+    position: absolute;
+    color: white;
+    bottom: 300px;
+    left: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 8px 9px 8px 9px;
+}
+
+.facebook{
+    position: absolute;
+    color: white;
+    bottom: 299px;
+    /* top: 2040px; */
+    left: 140px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.firstrow{
+    padding-top: 50px;
+    padding-left: 40px;
+}
+.companies , .codeicon{
+    background-color: white;
+}
+.company a{
+    text-decoration: none;
+    color: black;
+}
+
+.services a{
+    text-decoration: none;
+    color: black;
+}
+
+.secondrow{
+    padding-top: 50px;
+    padding-left: 40px;
+}
+.hosting a{
+    text-decoration: none;
+    color: black;
+}
+.domain a{
+    text-decoration: none;
+    color: black;
+}
+.address{
+    position: absolute;
+    bottom: 80px;
+    padding-left: 30px;
+}
+
+
+@media (max-width: 767.98px) {
+    .about{
+        position: relative;
+        width: 400%;
+    }
+    .row11{
+        width: 400%;
+    }
+    .image{
+        display: none;
+    }
+    .para{
+        margin-top: 200px;
+        margin-left: 400px;
+        width: 800px;
+    }
+    .heading {
+        font-size: 30pt;
+    }
+
+    .paragraph {
+        font-size: medium;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .marquee-container {
+        padding: 1rem 0;
+        width: 500%;
+    }
+
+    .contacting {
+        width: 360%;
+        height: 400px;
+        padding: 1rem;
+        margin-top: 200px;
+        padding-left: 250px;
+    }
+
+    .lights{
+        position: absolute;
+        bottom: 100px;
+        left: 1000px;
+    }
+
+    .code {
+        padding-left: 270px;
+        position: absolute;
+        width: 350%;
+    }
+
+    .background{
+        width: 101%;
+    }
+
+    .digital {
+        font-size: x-large;
+        position: absolute;
+        bottom: 600px;
+        left: 690px;
+        letter-spacing: 10px;
+    }
+
+    .linkedin, .facebook {
+        position: absolute;
+        bottom: 550px;
+        left: 780px;
+        /* transform: translateX(-50%); */
+    }
+
+    .facebook{
+        position: absolute;
+        bottom: 550px;
+        left: 880px;
+    }
+    .contact {
+        padding: 1rem;
+        padding-top: 100px;
+        padding-left: 90px;
+    }
+
+    .codepro {
+        position: absolute;
+        bottom: 690px;
+        left: 650px;
+        width: 400px;
+        height: 150px;
+    }
+}
+@media (max-width: 576px) {
+    .line{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .line{
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .line{
+       height: 165vh;
+    }
+    .contacting{
+        padding-left: 0px;
+        width: 700px;
+    }
+    .lights{
+        position: absolute;
+        left: 450px;
+    }
+    .code{
+        padding-left: 0px;
+        width: 800px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .line{
+       height: 134vh;
+    }
+    .background{
+        width: 130%;
+    }
+    .codepro{
+        position: absolute;
+        left: 130px;
+        bottom: 390px;
+    }
+    .digital{
+        position: absolute;
+        left: 135px;
+        bottom: 340px;
+    }
+    .linkedin{
+        position: absolute;
+        left: 180px;
+    }
+    .facebook{
+        position: absolute;
+        left: 230px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .line{
+       height: 126vh;
+    }
+    .background{
+        width: 130%;
+    }
+    .codepro{
+        position: absolute;
+        left: 130px;
+        bottom: 390px;
+    }
+    .digital{
+        position: absolute;
+        left: 135px;
+        bottom: 340px;
+    }
+    .linkedin{
+        position: absolute;
+        left: 180px;
+    }
+    .facebook{
+        position: absolute;
+        left: 230px;
+    }
+}
+/*  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px */
