@@ -73,7 +73,6 @@ body{
 
 .marquee-container {
     margin-top: 100px;
-    /* overflow: hidden; */
     position: relative;
     width: 100%;
     background-color: white;
@@ -101,7 +100,6 @@ body{
 .marquee {
     display: flex;
     width: 100%;
-    /* margin-top: 20px; */
     padding-left: 50px;
     animation: marquee 15s linear infinite;
 }
@@ -113,7 +111,7 @@ body{
 
 .marquee span {
     display: inline-block;
-    margin-right: 50px; /* Adjust the space between the names as needed */
+    margin-right: 50px; /* space between the names  */
 }
 
 @keyframes marquee {
@@ -122,7 +120,6 @@ body{
 }
 
 .partner {
-    /* font-family: 'Arial', sans-serif; */
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     color: blue;
@@ -132,7 +129,6 @@ body{
 }
 
 .part1 {
-    /* font-family: 'Arial', sans-serif; */
     font-weight: bold;
     color: red;
     font-size: larger;
@@ -150,7 +146,6 @@ body{
 .part3 {
     font-family: "Pacifico", cursive;
     font-weight: 400;
-    /* text-decoration: underline; */
     color: green;
     font-size: x-large;
     font-style: italic;
@@ -159,14 +154,12 @@ body{
 .part4 {
     font-family: "Satisfy", cursive;
     font-weight: 400;
-    /* text-decoration: underline; */
     color: orange;
     font-size: x-large;
     font-style: italic;
 }
 
 .contacting{
-    /* border: 1px solid white; */
     margin-top: 80px;
     padding-left: 60px ;
     width: 800px;
@@ -217,7 +210,6 @@ body{
     height: 70px;
     bottom: 400px;
     left: 80px;
-    /* padding-left: 50px; */
 }
 .digital{
     position: absolute;
@@ -240,7 +232,6 @@ body{
     position: absolute;
     color: white;
     bottom: 299px;
-    /* top: 2040px; */
     left: 140px;
     border: 1px solid white;
     border-radius: 50%;
@@ -283,7 +274,7 @@ body{
 }
 
 
-@media (max-width: 767.98px) {
+ @media (max-width: 767.98px) {
     .about{
         position: relative;
         width: 400%;
@@ -352,8 +343,7 @@ body{
         position: absolute;
         bottom: 550px;
         left: 780px;
-        /* transform: translateX(-50%); */
-    }
+    } 
 
     .facebook{
         position: absolute;
@@ -384,7 +374,7 @@ body{
     .line{
         display: none;
     }
-}
+} 
 
 @media (max-width: 992px) {
     .line{
@@ -433,7 +423,7 @@ body{
 
 @media (max-width: 1400px) {
     .line{
-       height: 126vh;
+       height: 196vh;
     }
     .background{
         width: 130%;
@@ -455,8 +445,8 @@ body{
     .facebook{
         position: absolute;
         left: 230px;
-    }
-}
+    } 
+} 
 /*  sm: 576px,
   md: 768px,
   lg: 992px,
