@@ -161,8 +161,8 @@ body{
 
 .contacting{
     margin-top: 80px;
-    padding-left: 60px ;
-    width: 800px;
+    padding-left: 200px ;
+    width: 1000px;
 }
 .contact{
     border: 2px solid #356b97;
@@ -173,7 +173,7 @@ body{
 }
 .lights{
     position: absolute;
-    left: 500px;
+    left: 700px;
     bottom: 600px;
 }
 .phones{
@@ -411,7 +411,7 @@ body{
 
 @media (min-width: 1200px) {
     .line {
-        height: 130vh;
+        height: 196vh;
     }
 
     .background {
@@ -429,10 +429,12 @@ body{
     }
 
     .linkedin {
+        bottom: 260px;
         left: 170px;
     }
 
     .facebook {
+        bottom: 259px;
         left: 220px;
     }
 }
